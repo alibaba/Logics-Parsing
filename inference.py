@@ -119,7 +119,7 @@ def plot_bbox(img_path, pred, input_height, input_width, output_path):
         bboxes.append([int(x1 * scale_x), int(y1 * scale_y), int(x2 * scale_x), int(y2 * scale_y)])
 
     
-    matches = re.findall(pattern, prediction)
+    matches = re.findall(pattern, pred)
     if matches:
         for match in matches:
             # print(match)
