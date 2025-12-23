@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="imgs/logo.jpg" width="80%" >
+  <img src="Logics-Parsing/imgs/logo.jpg" width="80%" >
 </div>
 
 
@@ -9,23 +9,23 @@
 
 ## Introduction
 <div align="center">
-  <img src="imgs/overview.png" alt="LogicsDocBench 概览" style="width: 800px; height: 250px;">
+  <img src="Logics-Parsing/imgs/overview.png" alt="LogicsDocBench 概览" style="width: 800px; height: 250px;">
 </div>
 
 <div align="center">
   <table style="width: 800px;">
     <tr>
       <td align="center">
-        <img src="imgs/report.gif" alt="研报示例">
+        <img src="Logics-Parsing/imgs/report.gif" alt="研报示例">
       </td>
       <td align="center">
-        <img src="imgs/chemistry.gif" alt="化学分子式示例">
+        <img src="Logics-Parsing/imgs/chemistry.gif" alt="化学分子式示例">
       </td>
       <td align="center">
-        <img src="imgs/paper.gif" alt="论文示例">
+        <img src="Logics-Parsing/imgs/paper.gif" alt="论文示例">
       </td>
       <td align="center">
-        <img src="imgs/handwritten.gif" alt="手写示例">
+        <img src="Logics-Parsing/imgs/handwritten.gif" alt="手写示例">
       </td>
     </tr>
     <tr>
@@ -67,7 +67,7 @@ Logics-Parsing is a powerful, end-to-end document parsing model built upon a gen
 
 Existing document-parsing benchmarks often provide limited coverage of complex layouts and STEM content. To address this, we constructed an in-house benchmark comprising 1,078 page-level images across nine major categories and over twenty sub-categories. Our model achieves the best performance on this benchmark.
 <div align="center">
-  <img src="imgs/BenchCls.png">
+  <img src="Logics-Parsing/imgs/BenchCls.png">
 </div>
 <table>
     <tr>
@@ -458,7 +458,7 @@ Existing document-parsing benchmarks often provide limited coverage of complex l
 conda create -n logis-parsing python=3.10
 conda activate logis-parsing
 
-pip install -r requirement.txt
+pip install -r Logics-Parsing/requirement.txt
 
 ```
 ### 2. Download Model Weights
@@ -475,7 +475,7 @@ python download_model.py -t huggingface
 
 ### 3. Inference
 ```shell
-python3 inference.py --image_path PATH_TO_INPUT_IMG --output_path PATH_TO_OUTPUT --model_path PATH_TO_MODEL
+python3 Logics-Parsing/inference.py --image_path PATH_TO_INPUT_IMG --output_path PATH_TO_OUTPUT --model_path PATH_TO_MODEL
 ```
 
 ## Acknowledgments
