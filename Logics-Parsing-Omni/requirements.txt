@@ -1,0 +1,12 @@
+torch==2.5.1
+torchvision==0.20.1 
+torchaudio==2.5.1
+transformers==4.57.1
+accelerate
+soundfile
+requests
+Pillow
+base64io
+tqdm
+common_io
+qwen-omni-utils

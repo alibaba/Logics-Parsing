@@ -1,19 +1,19 @@
 <div align="center">
-  <img src="imgs/logo.jpg" width="80%" >
+  <img src="Logics-Parsing-Omni/imgs/logo.jpg" width="80%" >
 </div>
 
 
 <p align="center">
-    🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing">Model</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://www.modelscope.cn/studios/Alibaba-DT/logix/summary">Demo</a>&nbsp&nbsp | &nbsp&nbsp📑 <a href="https://arxiv.org/">Technical Report</a>
+    🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-Omni">Model</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://www.modelscope.cn/studios/Alibaba-DT/logix/summary">Demo</a>&nbsp&nbsp | &nbsp&nbsp📑 <a href="https://arxiv.org/">Technical Report</a>
 </p>
 
 ## Introduction
 <div align="center">
-  <img src="imgs/overview.png" alt="LogicsDocBench 概览" style="width: 800px; height: 250px;">
+  <img src="Logics-Parsing-Omni/imgs/overview.png" alt="Logics-Parsing-Omni 概览" style="width: 800px; height: 250px;">
 </div>
 
 
-Logics-Parsing&Caption is a unified Multimodal Large Language Model (MLLM) designed to bridge the gap between pixel-level structural parsing and semantic-level cognitive captioning. It delivers breakthroughs in fine-grained perception and high-level cognition across documents, images, audio, and video.
+Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed to bridge the gap between pixel-level structural parsing and semantic-level cognitive captioning. It delivers breakthroughs in fine-grained perception and high-level cognition across documents, images, audio, and video.
 
 ## Key Features
 
@@ -42,10 +42,10 @@ Existing document-parsing benchmarks often provide limited coverage of complex l
 ## Quick Start
 ### 1. Installation
 ```shell
-conda create -n logis-parsing&caption python=3.10
-conda activate logis-parsing-caption
+conda create -n logics-parsing-omni python=3.10
+conda activate logics-parsing-omni
 
-pip install torch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cu124
+pip install -r Logics-Parsing-Omni/requirements.txt
 
 ```
 

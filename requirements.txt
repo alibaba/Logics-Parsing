@@ -1,9 +1,0 @@
-transformers==4.57.1
-accelerate
-soundfile
-requests
-Pillow
-base64io
-tqdm
-common_io
-qwen-omni-utils
