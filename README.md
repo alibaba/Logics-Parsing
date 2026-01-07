@@ -44,20 +44,19 @@ Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed
 As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocBench-v1.5 benchmarks, our proposed Logics-Parsing-Omni achieves overall performance superior to most existing general and specialized document parsing models. It shows notable advantages in multilingual document parsing, particularly for Chinese content, while maintaining balanced and robust capabilities across various structural elements such as text, tables, and formulas. These results validate the effectiveness and generality of the proposed unified single-stage architecture and training strategy for multimodal and diverse document parsing tasks.
 
 <table>
-    <caption style="text-align:center; font-size:14px; font-weight:normal;">
-        Comparisons with State-of-the-art methods on LogicsParsingBench
+     <caption style="text-align:center; font-size:14px; font-weight:normal;">
+        Table. Comparisons with State-of-the-art methods on LogicsParsingBench
     </caption>
     <tr>
         <td rowspan="2">Model Type</td>
         <td rowspan="2">Methods</td>
         <td colspan="2">Overall <sup>Edit</sup> ↓</td>
-        <td colspan="2">Text <sup>Edit</sup>  ↓</td>
-        <td colspan="2">Formula <sup>Edit</sup>  ↓</td>
+        <td colspan="2">Text Edit <sup>Edit</sup> ↓</td>
+        <td colspan="2">Formula <sup>Edit</sup> ↓</td>
         <td colspan="2">Table <sup>TEDS</sup> ↑</td>
-        <td colspan="2">Table <sup>Edit</sup>  ↓</td>
-        <td colspan="2">ReadOrder <sup>Edit</sup>  ↓</td>
-        <td rowspan="1">Chemistry <sup>Edit</sup>  ↓</td>
-        <td rowspan="1">HandWriting <sup>Edit</sup>  ↓</td>
+        <td colspan="2">Table <sup>Edit</sup> ↓</td>
+        <td colspan="2">ReadOrder<sup>Edit</sup> ↓</td>
+        <td rowspan="1">Chemistry<sup>Edit</sup> ↓</td>
     </tr>
     <tr>
         <td>EN</td>
@@ -92,7 +91,6 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.146</td>
         <td>0.122</td>
         <td>1.0</td>
-        <td>0.307</td>
     </tr>
     <tr>
         <td>textin</td>
@@ -103,17 +101,16 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.185</td>
         <td>0.223</td>
         <td>76.7</td>
-        <td><ins>86.3</ins></td>
+        <td>86.3</td>
         <td>0.176</td>
-        <td><b>0.113</b></td>
+        <td><ins>0.113</ins></td>
         <td><b>0.118</b></td>
-        <td><b>0.104</b></td>
+        <td>0.104</td>
         <td>1.0</td>
-        <td>0.344</td>
     </tr>
     <tr>
         <td>Mathpix</td>
-        <td><ins>0.128</ins></td>
+        <td>0.128</td>
         <td>0.146</td>
         <td>0.128</td>
         <td>0.152</td>
@@ -126,7 +123,6 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.204</td>
         <td>0.164</td>
         <td>0.552</td>
-        <td>0.263</td>
     </tr>
     <tr>
         <td>pp_structure_v3</td>
@@ -143,7 +139,6 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.201</td>
         <td>0.143</td>
         <td>1.0</td>
-        <td>0.382</td>
     </tr>
     <tr>
         <td>mineru2</td>
@@ -160,7 +155,6 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.205</td>
         <td>0.177</td>
         <td>1.0</td>
-        <td>0.387</td>
     </tr>
     <tr>
         <td>marker</td>
@@ -177,7 +171,6 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.23</td>
         <td>0.262</td>
         <td>1.0</td>
-        <td>0.50</td>
     </tr>
     <tr>
         <td>pix2text</td>
@@ -194,9 +187,7 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.424</td>
         <td>0.534</td>
         <td>1.0</td>
-        <td>0.95</td>
     </tr>
-    <!-- Expert MLLMs -->
     <tr>
         <td rowspan="8">Expert MLLMs</td>
         <td>Dolphin</td>
@@ -213,13 +204,12 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.160</td>
         <td>0.139</td>
         <td>0.984</td>
-        <td>0.433</td>
     </tr>
     <tr>
         <td>dots.ocr</td>
         <td>0.186</td>
         <td>0.198</td>
-        <td><ins>0.115</ins></td>
+        <td>0.115</td>
         <td>0.169</td>
         <td>0.291</td>
         <td>0.358</td>
@@ -230,7 +220,6 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.165</td>
         <td>0.123</td>
         <td>1.0</td>
-        <td><ins>0.255</ins></td>
     </tr>
     <tr>
         <td>MonkeyOcr</td>
@@ -247,7 +236,6 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.197</td>
         <td>0.180</td>
         <td>1.0</td>
-        <td>0.623</td>
     </tr>
     <tr>
         <td>OCRFlux</td>
@@ -264,7 +252,6 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.191</td>
         <td>0.156</td>
         <td>1.0</td>
-        <td>0.284</td>
     </tr>
     <tr>
         <td>gotocr</td>
@@ -281,7 +268,6 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.195</td>
         <td>0.164</td>
         <td>0.969</td>
-        <td>0.446</td>
     </tr>
     <tr>
         <td>olmocr</td>
@@ -298,7 +284,6 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.191</td>
         <td>0.169</td>
         <td>1.0</td>
-        <td>0.294</td>
     </tr>
     <tr>
         <td>SmolDocling</td>
@@ -315,15 +300,14 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>0.413</td>
         <td>0.695</td>
         <td>1.0</td>
-        <td>0.927</td>
     </tr>
     <tr>
-        <td><b>Logics-Parsing</b></td>
-        <td><b>0.124</b></td>
-        <td><b>0.145</b></td>
+        <td>Logics-Parsing</td>
+        <td><ins>0.124</ins></td>
+        <td><ins>0.145</ins></td>
         <td><b>0.089</b></td>
-        <td><b>0.139</b></td>
-        <td><ins>0.106</ins></td>
+        <td><ins>0.139</ins></td>
+        <td>0.106</td>
         <td>0.165</td>
         <td>76.6</td>
         <td>79.5</td>
@@ -332,7 +316,151 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td><ins>0.136</ins></td>
         <td>0.113</td>
         <td>0.519</td>
-        <td>0.252</td>
+    </tr>
+    <tr>
+        <td rowspan="9">General MLLMs</td>
+        <td>Qwen2.5-VL-72B</td>
+        <td>0.233</td>
+        <td>0.263</td>
+        <td>0.162</td>
+        <td>0.24</td>
+        <td>0.251</td>
+        <td>0.257</td>
+        <td>69.6</td>
+        <td>67</td>
+        <td>0.313</td>
+        <td>0.353</td>
+        <td>0.205</td>
+        <td>0.204</td>
+        <td>0.597</td>
+    </tr>
+    <tr>
+        <td>doubao-1.6</td>
+        <td>0.188</td>
+        <td>0.248</td>
+        <td>0.129</td>
+        <td>0.219</td>
+        <td>0.273</td>
+        <td>0.336</td>
+        <td>74.9</td>
+        <td>69.7</td>
+        <td>0.180</td>
+        <td>0.288</td>
+        <td>0.171</td>
+        <td>0.148</td>
+        <td>0.601</td>
+    </tr>
+    <tr>
+        <td>GPT-5</td>
+        <td>0.242</td>
+        <td>0.373</td>
+        <td>0.119</td>
+        <td>0.36</td>
+        <td>0.398</td>
+        <td>0.456</td>
+        <td>67.9</td>
+        <td>55.8</td>
+        <td>0.26</td>
+        <td>0.397</td>
+        <td>0.191</td>
+        <td>0.28</td>
+        <td>0.88</td>
+    </tr>
+    <tr>
+        <td>Gemini2.5-Pro</td>
+        <td>0.185</td>
+        <td>0.20</td>
+        <td>0.115</td>
+        <td>0.155</td>
+        <td>0.288</td>
+        <td>0.326</td>
+        <td><ins>82.6</ins></td>
+        <td>80.3</td>
+        <td>0.154</td>
+        <td>0.182</td>
+        <td>0.181</td>
+        <td>0.136</td>
+        <td>0.535</td>
+    </tr>
+    <tr>
+        <td>Gemini3-Pro</td>
+        <td>0.189</td>
+        <td>0.179</td>
+        <td>0.134</td>
+        <td>0.163</td>
+        <td>0.280</td>
+        <td>0.267</td>
+        <td><ins>82.6</ins></td>
+        <td>83.9</td>
+        <td>0.157</td>
+        <td>0.155</td>
+        <td>0.186</td>
+        <td>0.131</td>
+        <td><ins>0.512</ins></td>
+    </tr>
+    <tr>
+        <td>Qwen3-VL-30B-A3B</td>
+        <td>0.188</td>
+        <td>0.195</td>
+        <td>0.122</td>
+        <td>0.202</td>
+        <td>0.291</td>
+        <td>0.297</td>
+        <td>72.04</td>
+        <td>73.59</td>
+        <td>0.183</td>
+        <td>0.165</td>
+        <td>0.154</td>
+        <td>0.116</td>
+        <td>1.0</td>
+    </tr>
+    <tr>
+        <td>Qwen3-VL-235B-A22B</td>
+        <td>0.18</td>
+        <td>0.156</td>
+        <td>0.11</td>
+        <td>0.146</td>
+        <td>0.277</td>
+        <td>0.214</td>
+        <td>77.0</td>
+        <td>82.4</td>
+        <td>0.18</td>
+        <td>0.176</td>
+        <td>0.153</td>
+        <td><b>0.090</b></td>
+        <td>0.568</td>
+    </tr>
+    <tr>
+        <td>Qwen3-Omni (Base)</td>
+        <td>0.289</td>
+        <td>0.254</td>
+        <td>0.260</td>
+        <td>0.272</td>
+        <td>0.355</td>
+        <td>0.287</td>
+        <td>67.9</td>
+        <td>69.41</td>
+        <td>0.298</td>
+        <td>0.290</td>
+        <td>0.242</td>
+        <td>0.166</td>
+        <td>1.0</td>
+    </tr>
+    <tr>
+        <td><b>Logics-Parsing-Omni (Ours)</b></td>
+        <td><b>0.122</b></td>
+        <td><b>0.114</b></td>
+        <td><ins>0.094</ins></td>
+        <td><b>0.122</b></td>
+        <td><ins>0.086</ins></td>
+        <td><b>0.134</b></td>
+        <td>79.55</td>
+        <td><b>87.74</b></td>
+        <td>0.162</td>
+        <td><b>0.102</b></td>
+        <td>0.146</td>
+        <td><ins>0.096</ins></td>
+        <td><b>0.458</b></td>
     </tr>
 </table>
 
@@ -340,7 +468,7 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
 
 <table>
     <caption style="text-align:center; font-size:14px; font-weight:normal;">
-        Comparisons with State-of-the-art methods on OmniDocBench-v1.5
+        Table. Comparisons with State-of-the-art methods on OmniDocBench-v1.5
     </caption>
     <tr>
         <td>Model Type</td>
