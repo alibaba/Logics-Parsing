@@ -44,9 +44,6 @@ Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed
 As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocBench-v1.5 benchmarks, our proposed Logics-Parsing-Omni achieves overall performance superior to most existing general and specialized document parsing models. It shows notable advantages in multilingual document parsing, particularly for Chinese content, while maintaining balanced and robust capabilities across various structural elements such as text, tables, and formulas. These results validate the effectiveness and generality of the proposed unified single-stage architecture and training strategy for multimodal and diverse document parsing tasks.
 
 <table>
-     <caption style="text-align:center; font-size:14px; font-weight:normal;">
-        Table. Comparisons with State-of-the-art methods on LogicsParsingBench
-    </caption>
     <tr>
         <td rowspan="2">Model Type</td>
         <td rowspan="2">Methods</td>
@@ -72,9 +69,7 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td>EN</td>
         <td>ZH</td>
         <td>ALL</td>
-        <td>ALL</td>
     </tr>
-    <!-- Pipeline Tools -->
     <tr>
         <td rowspan="7">Pipeline Tools</td>
         <td>doc2x</td>
@@ -463,7 +458,6 @@ As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocB
         <td><b>0.458</b></td>
     </tr>
 </table>
-
 
 
 <table>
