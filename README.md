@@ -9,11 +9,11 @@
 
 
 <div align="center">
-  <img src="imgs/benchmark_clean_morandi_logicsdocbench.png" alt="LogicsDocBench results" style="width: 800px; height: 250px;">
+  <img src="imgs/benchmark_clean_morandi_logicsdocbench.png" alt="LogicsDocBench results" style="width: 800px; height: auto;">
 </div>
 <br><br>
 <div align="center">
-  <img src="imgs/benchmark_clean_morandi_omni.png" alt="OmniDocBench-v1.5 results" style="width: 800px; height: 250px;">
+  <img src="imgs/benchmark_clean_morandi_omni.png" alt="OmniDocBench-v1.5 results" style="width: 800px; height: auto;">
 </div>
 
 ## Updates
@@ -25,7 +25,7 @@
 **Logics-Parsing-v2** is an advanced evolution of the previously proposed Logics-Parsing (v1). It inherits all the core capabilities of v1 model, while demonstrating more powerful capabilities on handling complex documents. Furthermore, it extends support for **Parsing-2.0** scenarios, enabling structured parsing of musical sheets, flowcharts, as well as code/pseudocode blocks.
 
 <div align="center">
-  <img src="imgs/overview.png" alt="LogicsDocBench 概览" style="width: 800px; height: 250px;">
+  <img src="imgs/overview.png" alt="LogicsDocBench 概览" style="width: 800px; height: auto;">
 </div>
 
 <!-- <div align="center">
