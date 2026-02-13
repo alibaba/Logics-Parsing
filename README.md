@@ -524,7 +524,7 @@ The histogram below provides a more intuitive visualization of the advantages of
 
 <div align="center">
   <img src="imgs/benchmark_clean_morandi_split.png" width="100%" >
-</div>
+</div><br>
 
 
 ### Comparisons on OmniDocBench_v1.5
