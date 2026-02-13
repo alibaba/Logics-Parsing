@@ -2,9 +2,8 @@
   <img src="imgs/logo.jpg" width="80%" >
 </div>
 
-
 <p align="center">
-    💻 <a href="https://logics.alibaba-inc.com/parsing/?spm=label.2ef5001f.0.0.1c702159dQbTRd">HomePage</a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-v2">Model</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://www.modelscope.cn/studios/Alibaba-DT/logix/summary">Demo</a>
+    💻 <a href="https://logics.alibaba-inc.com/parsing/?spm=label.2ef5001f.0.0.1c702159dQbTRd">HomePage</a>&nbsp&nbsp | &nbsp&nbsp🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-v2">Model</a>&nbsp&nbsp | &nbsp&nbsp🤖 <a href="https://www.modelscope.cn/studios/Alibaba-DT/Logics-Parsing/summary">Demo</a>
 </p>
 
 
