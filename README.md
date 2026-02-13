@@ -528,7 +528,7 @@ The histogram below provides a more intuitive visualization of the advantages of
 
 ### Comparisons on OmniDocBench_v1.5
 
-We also provide the experimental results of our newly proposed Logics-Parsing-v2 model on the widely recognized open-source benchmark OmniDocBench-v1.5. As shown in the table below, Logics-Parsing-v2 achieves the highest scores among all other approaches, demonstrating its effectiveness and superiority.
+We also provide the experimental results of our newly proposed Logics-Parsing-v2 model on the widely recognized open-source benchmark OmniDocBench-v1.5. As shown in the table below, Logics-Parsing-v2 achieves highly competitive performance.
 
 <div align="center">
   <img src="imgs/omnidocbench_results.png" width="80%" >
