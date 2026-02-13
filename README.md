@@ -9,13 +9,12 @@
 
 
 <div align="center">
-  <img src="imgs/benchmark_clean_morandi_omni.png" alt="OmniDocBench-v1.5 results" style="width: 800px; height: 250px;">
-</div>
-
-<div align="center">
   <img src="imgs/benchmark_clean_morandi_logicsdocbench.png" alt="LogicsDocBench results" style="width: 800px; height: 250px;">
 </div>
-
+<br><br>
+<div align="center">
+  <img src="imgs/benchmark_clean_morandi_omni.png" alt="OmniDocBench-v1.5 results" style="width: 800px; height: 250px;">
+</div>
 
 ## Updates
 * [2026/02/13] 🚀🚀🚀🚀🚀 We release Logics-Parsing-v2 Model.
@@ -58,10 +57,11 @@
 ## Key Features
 <details>
     <summary><strong>v1</strong></summary>
+
 *   **Effortless End-to-End Processing**
 
-*   Our single-model architecture eliminates the need for complex, multi-stage pipelines. Deployment and inference are straightforward, going directly from a document image to structured output.
-*   It demonstrates exceptional performance on documents with challenging layouts.
+    *   Our single-model architecture eliminates the need for complex, multi-stage pipelines. Deployment and inference are straightforward, going directly from a document image to structured output.
+    *   It demonstrates exceptional performance on documents with challenging layouts.
 
 *   **Advanced Content Recognition**
 
@@ -542,6 +542,7 @@ _\* The model results in the table are sourced from the official OmniDocBench we
 
 <details>
     <summary><strong>v1</strong></summary>
+
 ### 1. Installation
 ```shell
 conda create -n logis-parsing python=3.10
