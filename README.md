@@ -58,18 +58,25 @@
 ## Key Features
 <details>
     <summary><strong>v1</strong></summary>
-    *   **Effortless End-to-End Processing**
-    *   Our single-model architecture eliminates the need for complex, multi-stage pipelines. Deployment and inference are straightforward, going directly from a document image to structured output.
-    *   It demonstrates exceptional performance on documents with challenging layouts.
-    *   **Advanced Content Recognition**
-        *   It accurately recognizes and structures difficult content, including intricate scientific formulas.
-        *   Chemical structures are intelligently identified and can be represented in the standard **SMILES** format.
-    *   **Rich, Structured HTML Output**
-        *   The model generates a clean HTML representation of the document, preserving its logical structure.
-        *   Each content block (e.g., paragraph, table, figure, formula) is tagged with its **category**, **bounding box coordinates**, and **OCR text**.
-        *   It automatically identifies and filters out irrelevant elements like headers and footers, focusing only on the core content.
-    *   **State-of-the-Art Performance**
-        * Logics-Parsing achieves the best performance on our in-house benchmark, which is specifically designed to comprehensively evaluate a model’s parsing capability on complex-layout documents and STEM content.
+*   **Effortless End-to-End Processing**
+
+*   Our single-model architecture eliminates the need for complex, multi-stage pipelines. Deployment and inference are straightforward, going directly from a document image to structured output.
+*   It demonstrates exceptional performance on documents with challenging layouts.
+
+*   **Advanced Content Recognition**
+
+    *   It accurately recognizes and structures difficult content, including intricate scientific formulas.
+    *   Chemical structures are intelligently identified and can be represented in the standard **SMILES** format.
+
+*   **Rich, Structured HTML Output**
+
+    *   The model generates a clean HTML representation of the document, preserving its logical structure.
+    *   Each content block (e.g., paragraph, table, figure, formula) is tagged with its **category**, **bounding box coordinates**, and **OCR text**.
+    *   It automatically identifies and filters out irrelevant elements like headers and footers, focusing only on the core content.
+
+*   **State-of-the-Art Performance**
+
+    * Logics-Parsing achieves the best performance on our in-house benchmark, which is specifically designed to comprehensively evaluate a model’s parsing capability on complex-layout documents and STEM content.
 </details>
 
 
@@ -535,25 +542,25 @@ _\* The model results in the table are sourced from the official OmniDocBench we
 
 <details>
     <summary><strong>v1</strong></summary>
-    ### 1. Installation
-    ```shell
-    conda create -n logis-parsing python=3.10
-    conda activate logis-parsing
-    pip install -r requirement.txt
-    ```
-    ### 2. Download Model Weights
-    ```
-    # Download our model from Modelscope.
-    pip install modelscope
-    python download_model.py -t modelscope
-    # Download our model from huggingface.
-    pip install huggingface_hub
-    python download_model.py -t huggingface
-    ```
-    ### 3. Inference
-    ```shell
-    python3 inference.py --image_path PATH_TO_INPUT_IMG --output_path PATH_TO_OUTPUT --model_path PATH_TO_MODEL
-    ```
+### 1. Installation
+```shell
+conda create -n logis-parsing python=3.10
+conda activate logis-parsing
+pip install -r requirement.txt
+```
+### 2. Download Model Weights
+```
+# Download our model from Modelscope.
+pip install modelscope
+python download_model.py -t modelscope
+# Download our model from huggingface.
+pip install huggingface_hub
+python download_model.py -t huggingface
+```
+### 3. Inference
+```shell
+python3 inference.py --image_path PATH_TO_INPUT_IMG --output_path PATH_TO_OUTPUT --model_path PATH_TO_MODEL
+```
 </details>
 
 ### 1. Installation
