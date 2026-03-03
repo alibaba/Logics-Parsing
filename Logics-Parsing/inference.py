@@ -119,7 +119,7 @@ def plot_bbox(img_path, pred, input_height, input_width, output_path):
         bboxes.append([int(x1 * scale_x), int(y1 * scale_y), int(x2 * scale_x), int(y2 * scale_y)])
 
     
-    matches = re.findall(pattern, pred)
+    matches = re.findall(pattern, prediction)
     if matches:
         for match in matches:
             # print(match)
@@ -150,9 +150,8 @@ if __name__ == "__main__":
     image_path = args.image_path
     prompt = args.prompt
     output_path =  args.output_path
-    
-    model = Qwen2_5_VLForConditionalGeneration.from_pretrained(model_path, torch_dtype=torch.bfloat16, attn_implementation="flash_attention_2", device_map="cuda")
-    print("model loaded")
+
+    model = Qwen2_5_VLForConditionalGeneration.from_pretrained(model_path, torch_dtype=torch.bfloat16, device_map="cuda")
     processor = AutoProcessor.from_pretrained(model_path)
     prediction, input_height, input_width = inference(image_path, prompt)
 
