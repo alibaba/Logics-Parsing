@@ -32,28 +32,28 @@ TASK_EXAMPLES = {
 
     # ------------------ Audio Modality ------------------
     "audio_parsing": {
-        "audio_path": "assets/sample_audio.wav",
+        "audio_path": "https://example.com/assets/sample_audio.wav",
         "text_prompt": "Divide the audio into continuous segments primarily based on speaker and VAD (split non-speech parts by audio classification); segments should include timestamps, classification labels, ASR, and speaker IDs, with a global description added at the end, output in JSON format."
     },
 
     # ------------------ Video Modality ------------------
     "natural_video_parsing": {
-        "video_path": "assets/natural_video.mp4",
+        "video_path": "https://example.com/assets/natural_video.mp4",
         "use_audio_in_video": True,
         "text_prompt": "Split the video into continuous time segments based on visual semantic changes; for each segment, extract timestamps, internal audio split points and classification labels (following the principle of prioritizing human voice VAD, and classifying non-vocal parts by audio type) and video attributes. Finally, integrate a global audio-visual description, ASR (including speaker distinction), and language information. Please output in JSON format."
     },
     "camera_aware_video_parsing": {
-        "video_path": "assets/camera_video.mp4",
+        "video_path": "https://example.com/assets/camera_video.mp4",
         "use_audio_in_video": True,
         "text_prompt": "描述视频内容并说明其运镜特点，同时提取视觉片段的时间戳与运镜标签，以JSON格式输出。"
     },
     "text_rich_video_parsing": {
-        "video_path": "assets/text_rich_video.mp4",
+        "video_path": "https://example.com/assets/text_rich_video.mp4",
         "use_audio_in_video": True,
         "text_prompt": "Please analyze the video using OCR information stability as the basis for segmentation, extract the timestamp, OCR, and ASR content of each segment in chronological order, add a global audio-video description at the end, and output the result in JSON format."
     },
     "text_rich_video_in_depth_caption": {
-        "video_path": "assets/course_video.mp4",
+        "video_path": "https://example.com/assets/course_video.mp4",
         "use_audio_in_video": True,
         "text_prompt": "根据输入的课程视频，生成一份结构清晰、内容详尽、易于学习者阅读的课程描述报告。"
     },
