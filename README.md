@@ -98,21 +98,20 @@ python inference.py --task custom \
 
 Here is the complete list of built-in tasks you can pass to the `--task` argument:
 
-| Modality | Task Argument (`--task`) | Description |
+| Modality | Task Argument (`--task`) | Prompt |
 | :--- | :--- | :--- |
-| **Single Image** | `document_structure_parsing` | Document Structure Parsing |
-| | `document_structure_and_semantic_parsing`| Document Structure and Semantic Parsing |
-| | `natural_image_parsing` | Natural Image Parsing (Entities, BBoxes, Descriptions) |
-| | `chart_image_parsing` | Chart Image Deep Parsing |
-| | `geometric_image_parsing` | Geometric Shapes & Text Parsing |
-| **Audio** | `audio_parsing` | Audio Segmentation, ASR, and VAD Parsing |
-| **Video** | `natural_video_parsing` | Video Semantic Segmentation with Audio Extraction |
-| | `camera_aware_video_parsing` | Camera Movement & Visual Tracking Parsing |
-| | `text_rich_video_parsing` | OCR & ASR Extraction for Text-Rich Videos |
-| | `text_rich_video_in_depth_caption` | In-depth Educational/Course Video Captioning |
-| **Multi-Image** | `natural_image_diff_parsing` | Structural Difference Parsing between 2 Natural Images |
-| | `geometric_diff_parsing` | Geometric Difference Parsing between 2 Images |
-
+| **Single Image** | `document_structure_parsing` | Output the parsing results of this document in JSON format. |
+| | `document_structure_and_semantic_parsing`| Output the parsing results of this document in JSON format. Include descriptions for illustrations, structurally parse natural images and graphics, and add a global overview at the end. Use the same language as the document text. |
+| | `natural_image_parsing` | 请检测图中的文本与实体，提取边界框、标签、属性及详细描述等结构化信息，并给出全局图像描述。结果以JSON格式输出。 |
+| | `chart_image_parsing` | 对图片进行深度解析，定位文本和图表，提取其边界框、标签、解析结果与描述，并给出全局图像描述，请用JSON格式呈现。 |
+| | `geometric_image_parsing` | Please detect the text and geometric shapes in the image, extract bounding boxes, labels, parsing results, and detailed descriptions, and provide a global image description. Output the results in JSON format. |
+| **Audio** | `audio_parsing` | Divide the audio into continuous segments primarily based on speaker and VAD (split non-speech parts by audio classification); segments should include timestamps, classification labels, ASR, and speaker IDs, with a global description added at the end, output in JSON format. |
+| **Video** | `natural_video_parsing` | Split the video into continuous time segments based on visual semantic changes; for each segment, extract timestamps, internal audio split points and classification labels (following the principle of prioritizing human voice VAD, and classifying non-vocal parts by audio type) and video attributes. Finally, integrate a global audio-visual description, ASR (including speaker distinction), and language information. Please output in JSON format. |
+| | `camera_aware_video_parsing` | 描述视频内容并说明其运镜特点，同时提取视觉片段的时间戳与运镜标签，以JSON格式输出。 |
+| | `text_rich_video_parsing` | Please analyze the video using OCR information stability as the basis for segmentation, extract the timestamp, OCR, and ASR content of each segment in chronological order, add a global audio-video description at the end, and output the result in JSON format. |
+| | `text_rich_video_in_depth_caption` | 根据输入的课程视频，生成一份结构清晰、内容详尽、易于学习者阅读的课程描述报告。 |
+| **Multi-Image** | `natural_image_diff_parsing` | 生成从第一张图编辑到第二张图的结构化解析结果。逐项列出所有变化元素，并给出对应的边界框、标签、属性及描述等信息；最后给出全局编辑描述总结整体变化。以JSON格式输出。 |
+| | `geometric_diff_parsing` | 生成从第一张图到第二张图的几何编辑解析结果。内容需包含所有变化几何元素的结构化解析、几何与定量关系，并给出总结整体变化的全局编辑指令。以JSON格式输出。 |
 
 
 ## Acknowledgments
@@ -120,4 +119,6 @@ Here is the complete list of built-in tasks you can pass to the `--task` argumen
 
 We would like to acknowledge the following open-source projects that provided inspiration and reference for this work:
 - [Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni)
+
+
 
