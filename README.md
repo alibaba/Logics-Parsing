@@ -60,7 +60,7 @@ pip install -r requirements.txt
 
 ### 2. Inference
 
-We provide a unified multimodal inference script (`inference.py`) that supports **12 pre-defined tasks** across 4 different modalities (Single Image, Multi-Image, Audio, and Video). 
+We provide a unified multimodal inference script (`inference_omni.py`) that supports **12 pre-defined tasks** across 4 different modalities (Single Image, Multi-Image, Audio, and Video). 
 
 You can easily test different capabilities using the `--task` argument. Additionally, all pre-defined tasks support bilingual prompts. You can switch between English and Chinese using the `--language` argument (`en` or `ch`, defaults to `en`).
 
@@ -69,10 +69,10 @@ Test a specific capability using built-in prompts and assets by passing the corr
 
 ```shell
 # Example: Run the natural video parsing task with the English prompt (default)
-python inference.py --task natural_video_parsing --language en
+python inference_omni.py --task natural_video_parsing --language en
 
 # Example: Run the document structure parsing task with the Chinese prompt
-python inference.py --task document_structure_parsing --language ch
+python inference_omni.py --task document_structure_parsing --language ch
 ```
 
 #### Option B: Run a Custom Task (CLI Mode)
@@ -80,22 +80,22 @@ If you want to test your own files and prompts, use the `--task custom` mode alo
 
 ```shell
 # Example 1: Single Image Inference
-python inference.py --task custom \
+python inference——omni.py --task custom \
     --image_paths path/to/image.jpg \
     --text_prompt "Describe the content of this image."
 
 # Example 2: Multi-Image Inference
-python inference.py --task custom \
+python inference_omni.py --task custom \
     --image_paths path/to/image1.jpg path/to/image2.jpg \
     --text_prompt "What are the differences between these two images?"
 
 # Example 3: Single Audio Inference
-python inference.py --task custom \
+python inference_omni.py --task custom \
     --audio_path path/to/audio.wav \
     --text_prompt "Please transcribe this audio."
 
 # Example 4: Single Video Inference (with audio extraction)
-python inference.py --task custom \
+python inference_omni.py --task custom \
     --video_path path/to/video.mp4 \
     --use_audio_in_video \
     --text_prompt "Please summarize this video."
