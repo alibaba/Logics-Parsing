@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="imgs/logo.png" width="80%" >
+  <img src="Logics-Parsing-Omni/imgs/logo.png" width="80%" >
 </div>
 
 
@@ -17,7 +17,7 @@
 Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed to bridge the gap between pixel-level structural parsing and semantic-level cognitive captioning. It delivers breakthroughs in fine-grained perception and high-level cognition across documents, images, audio, and video.
 
 <div align="center">
-  <img src="imgs/overview.png" alt="Logics-Parsing-Omni 概览" style="width: 800px; height: 250px;">
+  <img src="Logics-Parsing-Omni/imgs/overview.png" alt="Logics-Parsing-Omni 概览" style="width: 800px; height: 250px;">
 </div>
 
 

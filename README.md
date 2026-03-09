@@ -16,6 +16,7 @@
 </div>
 
 ## Updates
+
 * [2026/02/13] 🚀🚀🚀🚀🚀 We release Logics-Parsing-v2 Model.
 * [2025/09/25] 🚀🚀🚀We release Logics-Parsing Model.
 
