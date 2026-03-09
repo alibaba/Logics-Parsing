@@ -2,7 +2,6 @@
   <img src="Logics-Parsing-Omni/imgs/logo.png" width="80%" >
 </div>
 
-
 <p align="center">
     🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-Omni">Model</a>&nbsp&nbsp | &nbsp&nbsp📑 <a href="https://arxiv.org/">Technical Report</a>
 </p>
@@ -12,7 +11,6 @@
 * [2026/02/13] 🚀🚀🚀🚀🚀 We release **Logics-Parsing-v2** Model.
 * [2025/09/25] 🚀🚀🚀 We have released the [**Logics-Parsing**](https://github.com/alibaba/Logics-Parsing/Logics-Parsing/README.md). For more details, please check our [**Logics-Parsing paper**](https://arxiv.org/abs/2509.19760).
 
-
 ## Introduction
 Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed to bridge the gap between pixel-level structural parsing and semantic-level cognitive captioning. It delivers breakthroughs in fine-grained perception and high-level cognition across documents, images, audio, and video.
 
@@ -20,7 +18,12 @@ Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed
   <img src="Logics-Parsing-Omni/imgs/overview.png" alt="Logics-Parsing-Omni 概览" style="width: 800px; height: 250px;">
 </div>
 
-
+## Showcase
+<div align="center">
+  <!-- 请将此处的 src 替换为你实际的图片路径 -->
+  <img src="Logics-Parsing-Omni/imgs/showcase_all.png" alt="Showcase of the multifaceted capabilities of Logics-Parsing-Omni" width="100%">
+  <p><em>Showcase of the multifaceted capabilities of Logics-Parsing-Omni</em></p>
+</div>
 
 ## Key Features
 
@@ -40,11 +43,197 @@ Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed
     *   Powered by a meticulously constructed omni-modal dataset, the **Logics-Parsing-Omni** model establishes a robust balance between fine-grained structural fidelity and deep semantic interpretation, directly enabling downstream tasks like robust RAG and intelligent tutoring.
     *   Alongside the model, it introduces **OmniParsingBench**, a standardized evaluation infrastructure designed to quantitatively assess the full spectrum of parsing capabilities across documents, images, audio, and videos.
 
-
-
 ## Experimental Results
 
-As demonstrated by the evaluation results on the LogicsParsingBench and OmniDocBench-v1.5 benchmarks, our proposed Logics-Parsing-Omni achieves overall performance superior to most existing general and specialized document parsing models. It shows notable advantages in multilingual document parsing, particularly for Chinese content, while maintaining balanced and robust capabilities across various structural elements such as text, tables, and formulas. These results validate the effectiveness and generality of the proposed unified single-stage architecture and training strategy for multimodal and diverse document parsing tasks.
+### OmniParsingBench Evaluation
+
+To rigorously evaluate the unified parsing capabilities of our model across diverse modalities, we construct **OmniParsingBench**, a comprehensive, large-scale, and high-quality evaluation corpus. Unlike traditional single-task benchmarks, OmniParsingBench is designed to assess the full spectrum of parsing performance—from fundamental signal detection to complex semantic reasoning—across six primary domains: Document, Natural Image, Graphics, Audio, Natural Video, and Text-Rich Video.
+
+Our evaluation framework strictly aligns with the proposed three-stage architecture (L1–L3), systematically assessing performance from L1-Holistic Detection (spatio-temporal grounding and classification), L2-Fine-grained Recognition (symbol extraction, attribute identification, and structural recovery), to L3-Multi-level Interpreting (semantic consistency and hallucination resistance). To provide a concise view of model capabilities, we aggregate these fine-grained metrics into two core scores: **Perception**, which evaluates signal precision and structural fidelity (dominating L1 and L2), and **Cognition**, which evaluates logical reasoning and semantic understanding (dominating L3).
+
+<div align="center">
+  <!-- 请将此处的 src 替换为你实际的图片路径 -->
+  <img src="Logics-Parsing-Omni/imgs/omnibench_performance.png" alt="OmniParsingBench performance of Logics-Parsing-Omni" width="100%">
+  <p><em>OmniParsingBench performance of Logics-Parsing-Omni.</em></p>
+</div>
+
+As detailed in the table below, Logics-Parsing-Omni demonstrates highly competitive or state-of-the-art capabilities across all six diverse modalities when evaluated on Overall (Ovr.), Perception (Perc.), and Cognition (Cog.) metrics. 
+
+Notably, our model consistently surpasses all evaluated baselines—including the leading proprietary Gemini-3 Pro—in the Graphics, Audio, and Text-Rich Video domains. This superiority is particularly pronounced in the Cognition metric, where Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as 92.19 in Graphics and 84.22 in Text-Rich Video. While Gemini-3 Pro maintains an advantage in the fundamental perception of Natural Images and Documents, as well as a marginal lead in Natural Video, our model significantly outperforms other open-weight counterparts (e.g., the Qwen series) across the board. These quantitative results validate the efficacy of our L1–L3 architecture, demonstrating that Logics-Parsing-Omni successfully bridges fundamental signal detection with complex multi-modal interpreting.
+
+<br>
+
+<div align="center">
+  <strong>Table 1: Performance comparison of various models on OmniParsingBench.</strong>
+  <br><br>
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2" align="left">Model</th>
+        <th colspan="3" align="center">Natural Image</th>
+        <th colspan="3" align="center">Graphics</th>
+        <th colspan="1" align="center">Document</th>
+        <th colspan="3" align="center">Audio</th>
+        <th colspan="3" align="center">Natural Video</th>
+        <th colspan="3" align="center">Text-Rich Video</th>
+      </tr>
+      <tr>
+        <th align="center">Ovr.</th>
+        <th align="center">Perc.</th>
+        <th align="center">Cog.</th>
+        <th align="center">Ovr.</th>
+        <th align="center">Perc.</th>
+        <th align="center">Cog.</th>
+        <th align="center">Perc.</th>
+        <th align="center">Ovr.</th>
+        <th align="center">Perc.</th>
+        <th align="center">Cog.</th>
+        <th align="center">Ovr.</th>
+        <th align="center">Perc.</th>
+        <th align="center">Cog.</th>
+        <th align="center">Ovr.</th>
+        <th align="center">Perc.</th>
+        <th align="center">Cog.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="left">Gemini-3 Pro</td>
+        <td align="center"><b>69.72</b></td>
+        <td align="center"><b>63.15</b></td>
+        <td align="center"><b>76.29</b></td>
+        <td align="center"><u>86.66</u></td>
+        <td align="center"><b>85.33</b></td>
+        <td align="center"><u>87.98</u></td>
+        <td align="center"><b>87.01</b></td>
+        <td align="center"><u>52.68</u></td>
+        <td align="center"><b>73.99</b></td>
+        <td align="center"><u>31.37</u></td>
+        <td align="center"><b>44.56</b></td>
+        <td align="center"><b>52.54</b></td>
+        <td align="center"><b>36.57</b></td>
+        <td align="center"><u>66.50</u></td>
+        <td align="center"><u>53.47</u></td>
+        <td align="center"><u>79.53</u></td>
+      </tr>
+      <tr>
+        <td align="left">GPT-5.2</td>
+        <td align="center">52.84</td>
+        <td align="center">46.07</td>
+        <td align="center">59.61</td>
+        <td align="center">81.07</td>
+        <td align="center">70.34</td>
+        <td align="center"><u>91.80</u></td>
+        <td align="center">77.43</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+      </tr>
+      <tr>
+        <td align="left">Qwen3.5-397B-A17B</td>
+        <td align="center">54.80</td>
+        <td align="center">47.12</td>
+        <td align="center">62.48</td>
+        <td align="center">78.79</td>
+        <td align="center">74.44</td>
+        <td align="center">83.15</td>
+        <td align="center">81.09</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+      </tr>
+      <tr>
+        <td align="left">Qwen3-VL-235B-A22B</td>
+        <td align="center">59.34</td>
+        <td align="center"><u>50.62</u></td>
+        <td align="center">68.05</td>
+        <td align="center">78.00</td>
+        <td align="center">72.15</td>
+        <td align="center">83.85</td>
+        <td align="center">84.47</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+      </tr>
+      <tr>
+        <td align="left">Qwen3-VL-30B-A3B</td>
+        <td align="center">53.73</td>
+        <td align="center">46.47</td>
+        <td align="center">60.99</td>
+        <td align="center">73.05</td>
+        <td align="center">66.31</td>
+        <td align="center">79.78</td>
+        <td align="center">78.94</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+        <td align="center">--</td>
+      </tr>
+      <tr>
+        <td align="left">Qwen3-Omni-30B-A3B</td>
+        <td align="center">51.30</td>
+        <td align="center">44.88</td>
+        <td align="center">57.72</td>
+        <td align="center">74.93</td>
+        <td align="center">71.39</td>
+        <td align="center">78.47</td>
+        <td align="center">73.50</td>
+        <td align="center">48.17</td>
+        <td align="center">62.86</td>
+        <td align="center">33.48</td>
+        <td align="center">27.98</td>
+        <td align="center">29.35</td>
+        <td align="center">26.60</td>
+        <td align="center">33.76</td>
+        <td align="center">8.40</td>
+        <td align="center">59.11</td>
+      </tr>
+      <tr>
+        <td align="left"><b>Logics-Parsing-Omni</b></td>
+        <td align="center"><u>62.46</u></td>
+        <td align="center">50.53</td>
+        <td align="center"><u>74.38</u></td>
+        <td align="center"><b>87.43</b></td>
+        <td align="center"><u>82.67</u></td>
+        <td align="center"><b>92.19</b></td>
+        <td align="center"><u>84.90</u></td>
+        <td align="center"><b>53.75</b></td>
+        <td align="center"><u>70.03</u></td>
+        <td align="center"><b>37.48</b></td>
+        <td align="center"><u>43.78</u></td>
+        <td align="center"><u>51.76</u></td>
+        <td align="center"><u>35.79</u></td>
+        <td align="center"><b>69.37</b></td>
+        <td align="center"><b>54.52</b></td>
+        <td align="center"><b>84.22</b></td>
+      </tr>
+    </tbody>
+  </table>
+  <p align="left"><em>Note: <b>Bold text</b> indicates the best result, and <u>underlined text</u> indicates the second-best result.</em></p>
+</div>
 
 ## Quick Start
 
@@ -55,8 +244,6 @@ conda activate logics-parsing-omni
 
 pip install -r requirements.txt
 ```
-
-
 
 ### 2. Inference
 
@@ -80,7 +267,7 @@ If you want to test your own files and prompts, use the `--task custom` mode alo
 
 ```shell
 # Example 1: Single Image Inference
-python inference——omni.py --task custom \
+python inference_omni.py --task custom \
     --image_paths path/to/image.jpg \
     --text_prompt "Describe the content of this image."
 
@@ -122,9 +309,5 @@ Here is the complete list of built-in tasks you can pass to the `--task` argumen
 
 ## Acknowledgments
 
-
 We would like to acknowledge the following open-source projects that provided inspiration and reference for this work:
 - [Qwen3-Omni](https://github.com/QwenLM/Qwen3-Omni)
-
-
-
