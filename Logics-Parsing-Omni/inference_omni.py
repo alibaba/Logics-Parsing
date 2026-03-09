@@ -7,10 +7,10 @@ from qwen_omni_utils import process_mm_info
 # =====================================================================
 # Pre-defined Task Examples
 # =====================================================================
-TASK_EXAMPLES = TASK_EXAMPLES = {
+TASK_EXAMPLES = {
     # ------------------ Single Image Modality ------------------
     "document_structure_parsing": {
-        "image_paths": ["assets/document.jpg"],
+        "image_paths": ["assets/document.png"],
         "text_prompt": {
             "en": "Output the parsing results of this document in JSON format.",
             "ch": "以JSON格式输出此文档的解析结果。"
@@ -24,21 +24,21 @@ TASK_EXAMPLES = TASK_EXAMPLES = {
         }
     },
     "natural_image_parsing": {
-        "image_paths": ["assets/natural_image.jpg"],
+        "image_paths": ["assets/natural_image.png"],
         "text_prompt": {
             "en": "Please detect text and entities in the image, extract structured information such as bounding boxes, labels, attributes, and detailed descriptions, and provide a global image description. Output the results in JSON format.",
             "ch": "请检测图中的文本与实体，提取边界框、标签、属性及详细描述等结构化信息，并给出全局图像描述。结果以JSON格式输出。"
         }
     },
     "chart_image_parsing": {
-        "image_paths": ["assets/chart_image.jpg"],
+        "image_paths": ["assets/chart_image.png"],
         "text_prompt": {
             "en": "Please detect the text and charts in the image, extract bounding boxes, labels, parsing results, and detailed descriptions, and provide a global image description. Output the results in JSON format.",
             "ch": "对图片进行深度解析，定位文本和图表，提取其边界框、标签、解析结果与描述，并给出全局图像描述，请用JSON格式呈现。"
         }
     },
     "geometric_image_parsing": {
-        "image_paths": ["assets/geometric_image.jpg"],
+        "image_paths": ["assets/geometric_image.png"],
         "text_prompt": {
             "en": "Please detect the text and geometric shapes in the image, extract bounding boxes, labels, parsing results, and detailed descriptions, and provide a global image description. Output the results in JSON format.",
             "ch": "请检测图中的文本和几何形状，提取边界框、标签、解析结果及详细描述，并提供全局图像描述。结果以JSON格式输出。"
@@ -90,14 +90,14 @@ TASK_EXAMPLES = TASK_EXAMPLES = {
 
     # ------------------ Multi-Image Modality ------------------
     "natural_image_diff_parsing": {
-        "image_paths": ["assets/natural_img_before.jpg", "assets/natural_img_after.jpg"],
+        "image_paths": ["assets/natural_img_before.png", "assets/natural_img_after.png"],
         "text_prompt": {
             "en": "Generate structured analysis results for the edit from the first image to the second image. List all changed elements item by item, providing corresponding bounding boxes, labels, attributes, and descriptions; finally, provide a global editing description summarizing the overall changes. Output in JSON format.",
             "ch": "生成从第一张图编辑到第二张图的结构化解析结果。逐项列出所有变化元素，并给出对应的边界框、标签、属性及描述等信息；最后给出全局编辑描述总结整体变化。以JSON格式输出。"
         }
     },
     "geometric_diff_parsing": {
-        "image_paths": ["assets/geo_img_before.jpg", "assets/geo_img_after.jpg"],
+        "image_paths": ["assets/geo_img_before.png", "assets/geo_img_after.png"],
         "text_prompt": {
             "en": "Generate the analysis results of geometric edits from the first image to the second image. The content must include structured parsing of all changed geometric elements, geometric and quantitative relationships, and provide a global editing instruction summarizing the overall changes. Output in JSON format.",
             "ch": "生成从第一张图到第二张图的几何编辑解析结果。内容需包含所有变化几何元素的结构化解析、几何与定量关系，并给出总结整体变化的全局编辑指令。以JSON格式输出。"

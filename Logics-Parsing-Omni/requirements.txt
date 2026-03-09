@@ -1,0 +1,15 @@
+accelerate
+decord
+ffmpeg
+ffmpeg-python
+flash-attn
+librosa
+moviepy
+opencv-python
+pysubs2
+qwen-omni-utils[decord]==0.0.8
+requests
+torch==2.6.0
+torchaudio==2.6.0
+torchvision==0.21.0
+./transformers-omni3
