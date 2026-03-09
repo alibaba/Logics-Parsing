@@ -20,7 +20,7 @@ Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed
 
 ## Showcase
 <div align="center">
-  <img src="Logics-Parsing-Omni/imgs/showcase_all.png" alt="Showcase of the multifaceted capabilities of Logics-Parsing-Omni" style="width: 100%; height: auto; object-fit: contain;">
+  <img src="Logics-Parsing-Omni/imgs/showcase_all.png" alt="Showcase of the multifaceted capabilities of Logics-Parsing-Omni" style="width: 600px; height: 1500px;">
   <p><em>Showcase of the multifaceted capabilities of Logics-Parsing-Omni</em></p>
 </div>
 
@@ -53,7 +53,7 @@ Our evaluation framework strictly aligns with the proposed three-stage architect
 
 <div align="center">
   <!-- 请将此处的 src 替换为你实际的图片路径 -->
-  <img src="Logics-Parsing-Omni/imgs/omniparsingbench_performance.jpg" alt="OmniParsingBench performance of Logics-Parsing-Omni" width="100%">
+  <img src="Logics-Parsing-Omni/imgs/omniparsingbench_performance.jpg" alt="OmniParsingBench performance of Logics-Parsing-Omni" style="width: 800px; height: 500px;">
   <p><em>OmniParsingBench performance of Logics-Parsing-Omni.</em></p>
 </div>
 
