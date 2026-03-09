@@ -7,7 +7,7 @@
 </p>
 
 ## News
-* [2026/03/08] We release the [**Logics-Parsing-Omni**](XXXX). For more details, please check our [**Logics-Parsing-Omni paper**](https://arxiv.org/).
+* [2026/03/10] We release the [**Logics-Parsing-Omni**](https://github.com/alibaba/Logics-Parsing/Logics-Parsing/Logics-Parsing-Omni/README.md). For more details, please check our [**Logics-Parsing-Omni paper**](https://arxiv.org/).
 * [2026/02/13] 🚀🚀🚀🚀🚀 We release **Logics-Parsing-v2** Model.
 * [2025/09/25] 🚀🚀🚀 We have released the [**Logics-Parsing**](https://github.com/alibaba/Logics-Parsing/Logics-Parsing/README.md). For more details, please check our [**Logics-Parsing paper**](https://arxiv.org/abs/2509.19760).
 
@@ -20,10 +20,10 @@ Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed
 
 ## Showcase
 <div align="center">
-  <!-- 请将此处的 src 替换为你实际的图片路径 -->
-  <img src="Logics-Parsing-Omni/imgs/showcase_all.png" alt="Showcase of the multifaceted capabilities of Logics-Parsing-Omni" width="100%">
+  <img src="Logics-Parsing-Omni/imgs/showcase_all.png" alt="Showcase of the multifaceted capabilities of Logics-Parsing-Omni" style="width: 100%; height: auto; object-fit: contain;">
   <p><em>Showcase of the multifaceted capabilities of Logics-Parsing-Omni</em></p>
 </div>
+
 
 ## Key Features
 
@@ -53,7 +53,7 @@ Our evaluation framework strictly aligns with the proposed three-stage architect
 
 <div align="center">
   <!-- 请将此处的 src 替换为你实际的图片路径 -->
-  <img src="Logics-Parsing-Omni/imgs/omnibench_performance.png" alt="OmniParsingBench performance of Logics-Parsing-Omni" width="100%">
+  <img src="Logics-Parsing-Omni/imgs/omniparsingbench_performance.jpg" alt="OmniParsingBench performance of Logics-Parsing-Omni" width="100%">
   <p><em>OmniParsingBench performance of Logics-Parsing-Omni.</em></p>
 </div>
 
