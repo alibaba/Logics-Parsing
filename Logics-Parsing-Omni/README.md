@@ -219,7 +219,7 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
       </tr>
     </tbody>
   </table>
-  <p align="left"><em>Note: <b>Bold text</b> indicates the best result, and <u>underlined text</u> indicates the second-best result. Models lacking Audio/Video support are excluded from Table 2.</em></p>
+  <p align="left"><em>Note: <b>Bold text</b> indicates the best result, and <u>underlined text</u> indicates the second-best result.</em></p>
 </div>
 
 As detailed in the tables above, **Logics-Parsing-Omni** demonstrates highly competitive capabilities across all diverse modalities:
