@@ -7,15 +7,16 @@
 </p>
 
 ## News
-* [2026/03/10] We release the [**Logics-Parsing-Omni**](https://github.com/alibaba/Logics-Parsing/Logics-Parsing/Logics-Parsing-Omni/README.md). For more details, please check our [**Technical Report**](https://arxiv.org/).
+* [2026/03/10] We release the [**Logics-Parsing-Omni**](https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni/README.md). For more details, please check our [**Technical Report**](https://arxiv.org/).
 * [2026/02/13] 🚀🚀🚀🚀🚀 We release Logics-Parsing-v2 Model.
-* [2025/09/25] 🚀🚀🚀We release Logics-Parsing Model.
+* [2025/09/25] 🚀🚀🚀 We release Logics-Parsing Model.
 
 ## Introduction
-Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed to bridge the gap between pixel-level structural parsing and semantic-level cognitive captioning. It delivers breakthroughs in fine-grained perception and high-level cognition across documents, images, audio, and video.
+Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed to bridge the gap between pixel-level structural parsing and semantic-level cognitive captioning. It provides strong performance in both fine-grained perception and high-level semantic understanding across documents, images, audio, and video.
 
 <div align="center">
   <img src="imgs/overview.png" alt="Logics-Parsing-Omni Overview" width="800">
+    <p><em>The construction of unified multi-modal parsing corpus and training pipeline of our proposed Logics-Parsing-Omni.</em></p>
 </div>
 
 <div align="center">
@@ -46,12 +47,13 @@ Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed
 
 ## OmniParsingBench Evaluation
 
-To rigorously evaluate the unified parsing capabilities of our model across diverse modalities, we introduce **OmniParsingBench**—a comprehensive, large-scale evaluation corpus. It assesses the full spectrum of parsing performance across six primary domains: *Natural Image, Graphics, Document, Audio, Natural Video, and Text-Rich Video*.
+To rigorously evaluate the unified parsing capabilities of our model across diverse modalities, we introduce **OmniParsingBench**—a comprehensive, large-scale evaluation corpus. It assesses the full spectrum of parsing performance across six primary domains: *Natural Image, Graphics, Document, Audio, Natural Video, and Text-Rich Video*. 
 
 To provide a concise view of model capabilities, we aggregate fine-grained metrics into three core scores:
 - **Perception (Perc.):** Evaluates signal precision and structural fidelity (e.g., spatio-temporal grounding, symbol extraction).
 - **Cognition (Cog.):** Evaluates logical reasoning, semantic understanding, and hallucination resistance.
 - **Overall (Ovr.):** The comprehensive performance metric.
+Full evaluation details are released in the technical report.
 
 <div align="center">
   <img src="imgs/omniparsingbench_performance.jpg" alt="OmniParsingBench performance of Logics-Parsing-Omni" style="width: 800px; height: 450px;">
@@ -218,7 +220,7 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
       </tr>
     </tbody>
   </table>
-  <p align="left"><em>Note: <b>Bold text</b> indicates the best result, and <u>underlined text</u> indicates the second-best result.</em></p>
+  <p align="left"><em>Note: <b>Bold text</b> indicates the best result.</em></p>
 </div>
 
 
@@ -227,6 +229,13 @@ As detailed in the tables above, **Logics-Parsing-Omni** demonstrates highly com
 - **Exceptional Cognitive Reasoning:** The superiority is particularly pronounced in the *Cognition* metric. Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as **92.19** in Graphics and **84.22** in Text-Rich Video.
 These results firmly validate that our model successfully bridges fundamental signal detection with complex multi-modal interpreting.
 
+
+
+
+As detailed in the tables above, **Logics-Parsing-Omni** demonstrates highly competitive capabilities across all diverse modalities:
+- **Dominance in Complex Modalities:** Our model consistently surpasses all evaluated baselines—including the leading proprietary **Gemini-3-Pro**—in the *Graphics*, *Audio*, and *Text-Rich Video* domains.
+- **Exceptional Cognitive Reasoning:** The superiority is particularly pronounced in the *Cognition* metric. Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as **92.19** in Graphics and **79.03** in Text-Rich Video.
+These results firmly validate that our model successfully bridges fundamental signal detection with complex multi-modal interpreting.
 
 
 ## Quick Start
