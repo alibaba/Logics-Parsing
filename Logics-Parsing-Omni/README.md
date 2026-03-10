@@ -8,8 +8,8 @@
 
 ## News
 * [2026/03/10] We release the [**Logics-Parsing-Omni**](https://github.com/alibaba/Logics-Parsing/Logics-Parsing/Logics-Parsing-Omni/README.md). For more details, please check our [**Logics-Parsing-Omni paper**](https://arxiv.org/).
-* [2026/02/13] 🚀🚀🚀🚀🚀 We release **Logics-Parsing-v2** Model.
-* [2025/09/25] 🚀🚀🚀 We have released the [**Logics-Parsing**](https://github.com/alibaba/Logics-Parsing/Logics-Parsing/README.md). For more details, please check our [**Logics-Parsing paper**](https://arxiv.org/abs/2509.19760).
+* [2026/02/13] 🚀🚀🚀🚀🚀 We release Logics-Parsing-v2 Model.
+* [2025/09/25] 🚀🚀🚀We release Logics-Parsing Model.
 
 ## Introduction
 Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed to bridge the gap between pixel-level structural parsing and semantic-level cognitive captioning. It delivers breakthroughs in fine-grained perception and high-level cognition across documents, images, audio, and video.
@@ -55,14 +55,15 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
 - **Overall (Ovr.):** The comprehensive performance metric.
 
 <div align="center">
-  <img src="Logics-Parsing-Omni/imgs/omniparsingbench_performance.jpg" alt="OmniParsingBench performance of Logics-Parsing-Omni" style="width: 800px; height: 500px;">
+  <img src="imgs/omniparsingbench_performance.jpg" alt="OmniParsingBench performance of Logics-Parsing-Omni" style="width: 800px; height: 500px;">
   <p><em>OmniParsingBench performance of Logics-Parsing-Omni.</em></p>
 </div>
 
-#### 🏆 Performance Comparison
+#### Performance Comparison
+
 
 <div align="center">
-  <strong>Table 1: Performance comparison of various models on OmniParsingBench.</strong>
+  <strong>Table 1: OmniParsingBench evaluation results on Image, Graphics, and Document</strong>
   <br><br>
   <table>
     <thead>
@@ -71,9 +72,6 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
         <th colspan="3" align="center">Natural Image</th>
         <th colspan="3" align="center">Graphics</th>
         <th colspan="1" align="center">Document</th>
-        <th colspan="3" align="center">Audio</th>
-        <th colspan="3" align="center">Natural Video</th>
-        <th colspan="3" align="center">Text-Rich Video</th>
       </tr>
       <tr>
         <th align="center">Ovr.</th>
@@ -83,6 +81,94 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
         <th align="center">Perc.</th>
         <th align="center">Cog.</th>
         <th align="center">Perc.</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="left">Gemini-3 Pro</td>
+        <td align="center"><b>69.72</b></td>
+        <td align="center"><b>63.15</b></td>
+        <td align="center"><b>76.29</b></td>
+        <td align="center"><u>86.66</u></td>
+        <td align="center"><b>85.33</b></td>
+        <td align="center"><u>87.98</u></td>
+        <td align="center"><b>87.01</b></td>
+      </tr>
+      <tr>
+        <td align="left">GPT-5.2</td>
+        <td align="center">52.84</td>
+        <td align="center">46.07</td>
+        <td align="center">59.61</td>
+        <td align="center">81.07</td>
+        <td align="center">70.34</td>
+        <td align="center"><u>91.80</u></td>
+        <td align="center">77.43</td>
+      </tr>
+      <tr>
+        <td align="left">Qwen3.5-397B-A17B</td>
+        <td align="center">54.80</td>
+        <td align="center">47.12</td>
+        <td align="center">62.48</td>
+        <td align="center">78.79</td>
+        <td align="center">74.44</td>
+        <td align="center">83.15</td>
+        <td align="center">81.09</td>
+      </tr>
+      <tr>
+        <td align="left">Qwen3-VL-235B-A22B</td>
+        <td align="center">59.34</td>
+        <td align="center"><u>50.62</u></td>
+        <td align="center">68.05</td>
+        <td align="center">78.00</td>
+        <td align="center">72.15</td>
+        <td align="center">83.85</td>
+        <td align="center">84.47</td>
+      </tr>
+      <tr>
+        <td align="left">Qwen3-VL-30B-A3B</td>
+        <td align="center">53.73</td>
+        <td align="center">46.47</td>
+        <td align="center">60.99</td>
+        <td align="center">73.05</td>
+        <td align="center">66.31</td>
+        <td align="center">79.78</td>
+        <td align="center">78.94</td>
+      </tr>
+      <tr>
+        <td align="left">Qwen3-Omni-30B-A3B</td>
+        <td align="center">51.30</td>
+        <td align="center">44.88</td>
+        <td align="center">57.72</td>
+        <td align="center">74.93</td>
+        <td align="center">71.39</td>
+        <td align="center">78.47</td>
+        <td align="center">73.50</td>
+      </tr>
+      <tr>
+        <td align="left"><b>Logics-Parsing-Omni (Ours)</b></td>
+        <td align="center"><u>62.46</u></td>
+        <td align="center">50.53</td>
+        <td align="center"><u>74.38</u></td>
+        <td align="center"><b>87.43</b></td>
+        <td align="center"><u>82.67</u></td>
+        <td align="center"><b>92.19</b></td>
+        <td align="center"><u>84.90</u></td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <strong>Table 2: OmniParsingBench evaluation results on Audio and Video</strong>
+  <br><br>
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2" align="left">Model</th>
+        <th colspan="3" align="center">Audio</th>
+        <th colspan="3" align="center">Natural Video</th>
+        <th colspan="3" align="center">Text-Rich Video</th>
+      </tr>
+      <tr>
         <th align="center">Ovr.</th>
         <th align="center">Perc.</th>
         <th align="center">Cog.</th>
@@ -97,13 +183,6 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
     <tbody>
       <tr>
         <td align="left">Gemini-3 Pro</td>
-        <td align="center"><b>69.72</b></td>
-        <td align="center"><b>63.15</b></td>
-        <td align="center"><b>76.29</b></td>
-        <td align="center"><u>86.66</u></td>
-        <td align="center"><b>85.33</b></td>
-        <td align="center"><u>87.98</u></td>
-        <td align="center"><b>87.01</b></td>
         <td align="center"><u>52.68</u></td>
         <td align="center"><b>73.99</b></td>
         <td align="center"><u>31.37</u></td>
@@ -115,90 +194,7 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
         <td align="center"><u>79.53</u></td>
       </tr>
       <tr>
-        <td align="left">GPT-5.2</td>
-        <td align="center">52.84</td>
-        <td align="center">46.07</td>
-        <td align="center">59.61</td>
-        <td align="center">81.07</td>
-        <td align="center">70.34</td>
-        <td align="center"><u>91.80</u></td>
-        <td align="center">77.43</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-      </tr>
-      <tr>
-        <td align="left">Qwen3.5-397B-A17B</td>
-        <td align="center">54.80</td>
-        <td align="center">47.12</td>
-        <td align="center">62.48</td>
-        <td align="center">78.79</td>
-        <td align="center">74.44</td>
-        <td align="center">83.15</td>
-        <td align="center">81.09</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-      </tr>
-      <tr>
-        <td align="left">Qwen3-VL-235B-A22B</td>
-        <td align="center">59.34</td>
-        <td align="center"><u>50.62</u></td>
-        <td align="center">68.05</td>
-        <td align="center">78.00</td>
-        <td align="center">72.15</td>
-        <td align="center">83.85</td>
-        <td align="center">84.47</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-      </tr>
-      <tr>
-        <td align="left">Qwen3-VL-30B-A3B</td>
-        <td align="center">53.73</td>
-        <td align="center">46.47</td>
-        <td align="center">60.99</td>
-        <td align="center">73.05</td>
-        <td align="center">66.31</td>
-        <td align="center">79.78</td>
-        <td align="center">78.94</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-        <td align="center">--</td>
-      </tr>
-      <tr>
         <td align="left">Qwen3-Omni-30B-A3B</td>
-        <td align="center">51.30</td>
-        <td align="center">44.88</td>
-        <td align="center">57.72</td>
-        <td align="center">74.93</td>
-        <td align="center">71.39</td>
-        <td align="center">78.47</td>
-        <td align="center">73.50</td>
         <td align="center">48.17</td>
         <td align="center">62.86</td>
         <td align="center">33.48</td>
@@ -211,13 +207,6 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
       </tr>
       <tr>
         <td align="left"><b>Logics-Parsing-Omni (Ours)</b></td>
-        <td align="center"><u>62.46</u></td>
-        <td align="center">50.53</td>
-        <td align="center"><u>74.38</u></td>
-        <td align="center"><b>87.43</b></td>
-        <td align="center"><u>82.67</u></td>
-        <td align="center"><b>92.19</b></td>
-        <td align="center"><u>84.90</u></td>
         <td align="center"><b>53.75</b></td>
         <td align="center"><u>70.03</u></td>
         <td align="center"><b>37.48</b></td>
@@ -230,11 +219,10 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
       </tr>
     </tbody>
   </table>
-  <p align="left"><em>Note: <b>Bold text</b> indicates the best result, and <u>underlined text</u> indicates the second-best result.</em></p>
+  <p align="left"><em>Note: <b>Bold text</b> indicates the best result, and <u>underlined text</u> indicates the second-best result. Models lacking Audio/Video support are excluded from Table 2.</em></p>
 </div>
-#### 💡 Key Takeaways
 
-As detailed in the table above, **Logics-Parsing-Omni** demonstrates highly competitive capabilities across all diverse modalities:
+As detailed in the tables above, **Logics-Parsing-Omni** demonstrates highly competitive capabilities across all diverse modalities:
 - **Dominance in Complex Modalities:** Our model consistently surpasses all evaluated baselines—including the leading proprietary **Gemini-3 Pro**—in the *Graphics*, *Audio*, and *Text-Rich Video* domains.
 - **Exceptional Cognitive Reasoning:** The superiority is particularly pronounced in the *Cognition* metric. Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as **92.19** in Graphics and **84.22** in Text-Rich Video.
 These results firmly validate that our model successfully bridges fundamental signal detection with complex multi-modal interpreting.
