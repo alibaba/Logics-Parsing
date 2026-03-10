@@ -40,28 +40,26 @@ Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed
     *   It is specifically optimized for long-form educational videos, successfully extracting structured pedagogical organizations (e.g., chapter hierarchies, key concepts) and dynamic narrative logic while mitigating information redundancy and topic drift.
 
 *   **Data-Centric Optimization & Comprehensive Benchmarking**
-    *   Powered by a meticulously constructed omni-modal dataset, the **Logics-Parsing-Omni** model establishes a robust balance between fine-grained structural fidelity and deep semantic interpretation, directly enabling downstream tasks like robust RAG and intelligent tutoring.
+    *   Powered by a meticulously constructed omni-modal dataset, the **Logics-Parsing-Omni** model establishes a robust balance between fine-grained structural fidelity and deep semantic interpretation.
     *   Alongside the model, it introduces **OmniParsingBench**, a standardized evaluation infrastructure designed to quantitatively assess the full spectrum of parsing capabilities across documents, images, audio, and videos.
 
-## Experimental Results
+
 
 ### OmniParsingBench Evaluation
 
-To rigorously evaluate the unified parsing capabilities of our model across diverse modalities, we construct **OmniParsingBench**, a comprehensive, large-scale, and high-quality evaluation corpus. Unlike traditional single-task benchmarks, OmniParsingBench is designed to assess the full spectrum of parsing performance—from fundamental signal detection to complex semantic reasoning—across six primary domains: Document, Natural Image, Graphics, Audio, Natural Video, and Text-Rich Video.
+To rigorously evaluate the unified parsing capabilities of our model across diverse modalities, we introduce **OmniParsingBench**—a comprehensive, large-scale evaluation corpus. It assesses the full spectrum of parsing performance across six primary domains: *Natural Image, Graphics, Document, Audio, Natural Video, and Text-Rich Video*.
 
-Our evaluation framework strictly aligns with the proposed three-stage architecture (L1–L3), systematically assessing performance from L1-Holistic Detection (spatio-temporal grounding and classification), L2-Fine-grained Recognition (symbol extraction, attribute identification, and structural recovery), to L3-Multi-level Interpreting (semantic consistency and hallucination resistance). To provide a concise view of model capabilities, we aggregate these fine-grained metrics into two core scores: **Perception**, which evaluates signal precision and structural fidelity (dominating L1 and L2), and **Cognition**, which evaluates logical reasoning and semantic understanding (dominating L3).
+To provide a concise view of model capabilities, we aggregate fine-grained metrics into three core scores:
+- **Perception (Perc.):** Evaluates signal precision and structural fidelity (e.g., spatio-temporal grounding, symbol extraction).
+- **Cognition (Cog.):** Evaluates logical reasoning, semantic understanding, and hallucination resistance.
+- **Overall (Ovr.):** The comprehensive performance metric.
 
 <div align="center">
-  <!-- 请将此处的 src 替换为你实际的图片路径 -->
   <img src="Logics-Parsing-Omni/imgs/omniparsingbench_performance.jpg" alt="OmniParsingBench performance of Logics-Parsing-Omni" style="width: 800px; height: 500px;">
   <p><em>OmniParsingBench performance of Logics-Parsing-Omni.</em></p>
 </div>
 
-As detailed in the table below, Logics-Parsing-Omni demonstrates highly competitive or state-of-the-art capabilities across all six diverse modalities when evaluated on Overall (Ovr.), Perception (Perc.), and Cognition (Cog.) metrics. 
-
-Notably, our model consistently surpasses all evaluated baselines—including the leading proprietary Gemini-3 Pro—in the Graphics, Audio, and Text-Rich Video domains. This superiority is particularly pronounced in the Cognition metric, where Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as 92.19 in Graphics and 84.22 in Text-Rich Video. While Gemini-3 Pro maintains an advantage in the fundamental perception of Natural Images and Documents, as well as a marginal lead in Natural Video, our model significantly outperforms other open-weight counterparts (e.g., the Qwen series) across the board. These quantitative results validate the efficacy of our L1–L3 architecture, demonstrating that Logics-Parsing-Omni successfully bridges fundamental signal detection with complex multi-modal interpreting.
-
-<br>
+#### 🏆 Performance Comparison
 
 <div align="center">
   <strong>Table 1: Performance comparison of various models on OmniParsingBench.</strong>
@@ -212,7 +210,7 @@ Notably, our model consistently surpasses all evaluated baselines—including th
         <td align="center">59.11</td>
       </tr>
       <tr>
-        <td align="left"><b>Logics-Parsing-Omni</b></td>
+        <td align="left"><b>Logics-Parsing-Omni (Ours)</b></td>
         <td align="center"><u>62.46</u></td>
         <td align="center">50.53</td>
         <td align="center"><u>74.38</u></td>
@@ -234,6 +232,14 @@ Notably, our model consistently surpasses all evaluated baselines—including th
   </table>
   <p align="left"><em>Note: <b>Bold text</b> indicates the best result, and <u>underlined text</u> indicates the second-best result.</em></p>
 </div>
+#### 💡 Key Takeaways
+
+As detailed in the table above, **Logics-Parsing-Omni** demonstrates highly competitive capabilities across all diverse modalities:
+- **Dominance in Complex Modalities:** Our model consistently surpasses all evaluated baselines—including the leading proprietary **Gemini-3 Pro**—in the *Graphics*, *Audio*, and *Text-Rich Video* domains.
+- **Exceptional Cognitive Reasoning:** The superiority is particularly pronounced in the *Cognition* metric. Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as **92.19** in Graphics and **84.22** in Text-Rich Video.
+These results firmly validate that our model successfully bridges fundamental signal detection with complex multi-modal interpreting.
+
+
 
 ## Quick Start
 
