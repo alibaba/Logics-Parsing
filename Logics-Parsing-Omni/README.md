@@ -18,14 +18,13 @@ Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed
   <img src="imgs/overview.png" alt="Logics-Parsing-Omni Overview" width="800">
 </div>
 
-## Showcase
 <div align="center">
   <img src="imgs/showcase_all.png" alt="Showcase of the multifaceted capabilities of Logics-Parsing-Omni" width="600">
   <p><em>Showcase of the multifaceted capabilities of Logics-Parsing-Omni</em></p>
 </div>
 
 
-## Key Features
+### Key Features
 
 *   **Omni-Modal Unified Parsing Framework**
     *   It introduces a **progressive three-level paradigm**—integrating Holistic Detection, Fine-grained Recognition, and Semantic Interpretation—that fundamentally bridges the gap between pixel-based perception and logic-based cognition.
@@ -45,7 +44,7 @@ Logics-Parsing-Omni is a unified Multimodal Large Language Model (MLLM) designed
 
 
 
-### OmniParsingBench Evaluation
+## OmniParsingBench Evaluation
 
 To rigorously evaluate the unified parsing capabilities of our model across diverse modalities, we introduce **OmniParsingBench**—a comprehensive, large-scale evaluation corpus. It assesses the full spectrum of parsing performance across six primary domains: *Natural Image, Graphics, Document, Audio, Natural Video, and Text-Rich Video*.
 
