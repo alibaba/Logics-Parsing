@@ -84,13 +84,13 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
     </thead>
     <tbody>
       <tr>
-        <td align="left">Gemini-3 Pro</td>
+        <td align="left">Gemini-3-Pro</td>
         <td align="center"><b>69.72</b></td>
         <td align="center"><b>63.15</b></td>
         <td align="center"><b>76.29</b></td>
         <td align="center"><u>86.66</u></td>
         <td align="center"><b>85.33</b></td>
-        <td align="center"><u>87.98</u></td>
+        <td align="center">87.98</td>
         <td align="center"><b>87.01</b></td>
       </tr>
       <tr>
@@ -144,7 +144,7 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
         <td align="center">73.50</td>
       </tr>
       <tr>
-        <td align="left"><b>Logics-Parsing-Omni (Ours)</b></td>
+        <td align="left"><b>Logics-Parsing-Omni(Ours)</b></td>
         <td align="center"><u>62.46</u></td>
         <td align="center">50.53</td>
         <td align="center"><u>74.38</u></td>
@@ -181,48 +181,49 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
     </thead>
     <tbody>
       <tr>
-        <td align="left">Gemini-3 Pro</td>
+        <td align="left">Gemini-3-Pro</td>
         <td align="center"><u>52.68</u></td>
         <td align="center"><b>73.99</b></td>
-        <td align="center"><u>31.37</u></td>
+        <td align="center">31.37</td>
         <td align="center"><b>44.56</b></td>
         <td align="center"><b>52.54</b></td>
         <td align="center"><b>36.57</b></td>
-        <td align="center"><u>66.50</u></td>
+        <td align="center"><u>61.00</u></td>
         <td align="center"><u>53.47</u></td>
-        <td align="center"><u>79.53</u></td>
+        <td align="center"><u>68.53</u></td>
       </tr>
       <tr>
         <td align="left">Qwen3-Omni-30B-A3B</td>
         <td align="center">48.17</td>
         <td align="center">62.86</td>
-        <td align="center">33.48</td>
+        <td align="center"><u>33.48</u></td>
         <td align="center">27.98</td>
         <td align="center">29.35</td>
         <td align="center">26.60</td>
-        <td align="center">33.76</td>
+        <td align="center">25.06</td>
         <td align="center">8.40</td>
-        <td align="center">59.11</td>
+        <td align="center">41.72</td>
       </tr>
       <tr>
-        <td align="left"><b>Logics-Parsing-Omni (Ours)</b></td>
+        <td align="left"><b>Logics-Parsing-Omni(Ours)</b></td>
         <td align="center"><b>53.75</b></td>
         <td align="center"><u>70.03</u></td>
         <td align="center"><b>37.48</b></td>
         <td align="center"><u>43.78</u></td>
         <td align="center"><u>51.76</u></td>
         <td align="center"><u>35.79</u></td>
-        <td align="center"><b>69.37</b></td>
+        <td align="center"><b>66.78</b></td>
         <td align="center"><b>54.52</b></td>
-        <td align="center"><b>84.22</b></td>
+        <td align="center"><b>79.03</b></td>
       </tr>
     </tbody>
   </table>
   <p align="left"><em>Note: <b>Bold text</b> indicates the best result, and <u>underlined text</u> indicates the second-best result.</em></p>
 </div>
 
+
 As detailed in the tables above, **Logics-Parsing-Omni** demonstrates highly competitive capabilities across all diverse modalities:
-- **Dominance in Complex Modalities:** Our model consistently surpasses all evaluated baselines—including the leading proprietary **Gemini-3 Pro**—in the *Graphics*, *Audio*, and *Text-Rich Video* domains.
+- **Dominance in Complex Modalities:** Our model consistently surpasses all evaluated baselines—including the leading proprietary **Gemini-3-Pro**—in the *Graphics*, *Audio*, and *Text-Rich Video* domains.
 - **Exceptional Cognitive Reasoning:** The superiority is particularly pronounced in the *Cognition* metric. Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as **92.19** in Graphics and **84.22** in Text-Rich Video.
 These results firmly validate that our model successfully bridges fundamental signal detection with complex multi-modal interpreting.
 
