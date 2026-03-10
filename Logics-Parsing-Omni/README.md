@@ -54,7 +54,7 @@ To provide a concise view of model capabilities, we aggregate fine-grained metri
 - **Overall (Ovr.):** The comprehensive performance metric.
 
 <div align="center">
-  <img src="imgs/omniparsingbench_performance.jpg" alt="OmniParsingBench performance of Logics-Parsing-Omni" style="width: 800px; height: 400px;">
+  <img src="imgs/omniparsingbench_performance.jpg" alt="OmniParsingBench performance of Logics-Parsing-Omni" style="width: 800px; height: 450px;">
   <p><em>OmniParsingBench performance of Logics-Parsing-Omni.</em></p>
 </div>
 
