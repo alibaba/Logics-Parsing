@@ -1,10 +1,20 @@
-<div align="center">
+<!-- <div align="center">
   <img src="imgs/logo.png" width="80%">
 </div>
 
 <p align="center">
     🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-Omni">Model</a>&nbsp&nbsp | &nbsp&nbsp📑 <a href="https://arxiv.org/pdf/2603.09677">Technical Report</a>
+</p> -->
+
+
+<div align="center">
+  <img src="imgs/logo.png" width="80%">
+</div>
+
+<p align="center">
+    🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-Omni">Model</a>&nbsp&nbsp | &nbsp&nbsp📑 <a href="https://arxiv.org/pdf/2603.09677">Technical Report</a>&nbsp&nbsp | &nbsp&nbsp<img src="https://img.shields.io/badge/GitHub-Logics--Parsing--Omni-blue?logo=github" alt="GitHub" style="vertical-align: middle;"> <a href="https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni/README.md">GitHub</a>
 </p>
+
 
 ## News
 * [2026/03/09] We release the [**Logics-Parsing-Omni**](https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni/README.md). For more details, please check our [**Technical Report**](https://arxiv.org/pdf/2603.09677).
@@ -226,7 +236,7 @@ Full evaluation details are released in the technical report.
 
 As detailed in the tables above, **Logics-Parsing-Omni** demonstrates highly competitive capabilities across all diverse modalities:
 - **Dominance in Complex Modalities:** Our model consistently surpasses all evaluated baselines—including the leading proprietary **Gemini-3-Pro**—in the *Graphics*, *Audio*, and *Text-Rich Video* domains.
-- **Exceptional Cognitive Reasoning:** The superiority is particularly pronounced in the *Cognition* metric. Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as **92.19** in Graphics and **84.22** in Text-Rich Video.
+- **Exceptional Cognitive Reasoning:** The superiority is particularly pronounced in the *Cognition* metric. Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as **92.19** in Graphics and **79.03** in Text-Rich Video.
 These results firmly validate that our model successfully bridges fundamental signal detection with complex multi-modal interpreting.
 
 
