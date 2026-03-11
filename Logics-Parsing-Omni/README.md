@@ -1,11 +1,3 @@
-<!-- <div align="center">
-  <img src="imgs/logo.png" width="80%">
-</div>
-
-<p align="center">
-    🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-Omni">Model</a>&nbsp&nbsp | &nbsp&nbsp📑 <a href="https://arxiv.org/pdf/2603.09677">Technical Report</a>
-</p> -->
-
 <div align="center">
   <img src="imgs/logo.png" width="80%">
 </div>
