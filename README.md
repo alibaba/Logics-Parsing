@@ -16,6 +16,7 @@
 </div>
 
 ## Updates
+* [2026/03/09] We release the [**Logics-Parsing-Omni**](https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni/README.md). For more details, please check our [**Technical Report**](https://arxiv.org/pdf/2603.09677).
 * [2026/02/13] 🚀🚀🚀🚀🚀 We release Logics-Parsing-v2 Model.
 * [2025/09/25] 🚀🚀🚀We release Logics-Parsing Model.
 
