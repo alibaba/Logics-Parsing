@@ -231,14 +231,6 @@ As detailed in the tables above, **Logics-Parsing-Omni** demonstrates highly com
 These results firmly validate that our model successfully bridges fundamental signal detection with complex multi-modal interpreting.
 
 
-
-
-As detailed in the tables above, **Logics-Parsing-Omni** demonstrates highly competitive capabilities across all diverse modalities:
-- **Dominance in Complex Modalities:** Our model consistently surpasses all evaluated baselines—including the leading proprietary **Gemini-3-Pro**—in the *Graphics*, *Audio*, and *Text-Rich Video* domains.
-- **Exceptional Cognitive Reasoning:** The superiority is particularly pronounced in the *Cognition* metric. Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as **92.19** in Graphics and **79.03** in Text-Rich Video.
-These results firmly validate that our model successfully bridges fundamental signal detection with complex multi-modal interpreting.
-
-
 ## Quick Start
 
 ### 1. Installation
