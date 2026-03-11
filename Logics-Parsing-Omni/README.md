@@ -3,12 +3,12 @@
 </div>
 
 <p align="center">
-    🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-Omni">Model</a>&nbsp&nbsp | &nbsp&nbsp📑 <a href="https://arxiv.org/pdf/2603.09677">Technical Report</a>&nbsp&nbsp | &nbsp&nbsp<a href="https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni/README.md"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="18" style="vertical-align: middle;"></a> <a href="https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni/README.md">GitHub</a>
+    🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-Omni">Model</a>&nbsp&nbsp | &nbsp&nbsp📑 <a href="https://arxiv.org/pdf/2603.09677">Technical Report</a>&nbsp&nbsp | &nbsp&nbsp<a href="https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni/README.md"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" width="18" style="vertical-align: middle;"></a> <a href="https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni">GitHub</a>
 </p>
 
 
 ## News
-* [2026/03/09] We release the [**Logics-Parsing-Omni**](https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni/README.md). For more details, please check our [**Technical Report**](https://arxiv.org/pdf/2603.09677).
+* [2026/03/09] We release the [**Logics-Parsing-Omni**](https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni). For more details, please check our [**Technical Report**](https://arxiv.org/pdf/2603.09677).
 * [2026/02/13] 🚀🚀🚀🚀🚀 We release Logics-Parsing-v2 Model.
 * [2025/09/25] 🚀🚀🚀 We release Logics-Parsing Model.
 
