@@ -6,14 +6,14 @@
     🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-Omni">Model</a>&nbsp&nbsp | &nbsp&nbsp📑 <a href="https://arxiv.org/pdf/2603.09677">Technical Report</a>
 </p> -->
 
-
 <div align="center">
   <img src="imgs/logo.png" width="80%">
 </div>
 
 <p align="center">
-    🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-Omni">Model</a>&nbsp&nbsp | &nbsp&nbsp📑 <a href="https://arxiv.org/pdf/2603.09677">Technical Report</a>&nbsp&nbsp | &nbsp&nbsp<img src="https://img.shields.io/badge/GitHub-Logics--Parsing--Omni-blue?logo=github" alt="GitHub" style="vertical-align: middle;"> <a href="https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni/README.md">GitHub</a>
+    🤗 <a href="https://huggingface.co/Logics-MLLM/Logics-Parsing-Omni">Model</a>&nbsp&nbsp | &nbsp&nbsp📑 <a href="https://arxiv.org/pdf/2603.09677">Technical Report</a>
 </p>
+github的链接是https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni/README.md
 
 
 ## News
