@@ -117,7 +117,7 @@ def qwenvl_cast_html_tag(input_text: str) -> str:
     def replace_code(match):
         content = match.group(1)
         processed_content = process_code_content(content)
-        return f"\n{processed_content}\n"
+        return f"\n\n{processed_content}\n\n"
     
     code_pattern = re.compile(
         r'<div\b[^>]*class="code"[^>]*>(.*?)</div>',
@@ -129,7 +129,7 @@ def qwenvl_cast_html_tag(input_text: str) -> str:
     def replace_pseudocode(match):
         content = match.group(1)
         processed_content = process_pseudocode_content(content)
-        return f"\n{processed_content}\n"
+        return f"\n\n{processed_content}\n\n"
     
     pseudocode_pattern = re.compile(
         r'<div\b[^>]*class="pseudocode"[^>]*>(.*?)</div>',
@@ -173,7 +173,7 @@ def qwenvl_cast_html_tag(input_text: str) -> str:
                 if not content.endswith('```'):
                     content += '\n```'
                 
-            return f"\n{content}\n"
+            return f"\n\n{content}\n\n"
 
         pattern = re.compile(
             rf'\s*<div\b[^>]*class="{class_name}"[^>]*>(.*?)</div>\s*',
@@ -189,7 +189,7 @@ def qwenvl_cast_html_tag(input_text: str) -> str:
     # <p>
     output = re.sub(
         r'<p\b[^>]*>(.*?)</p>',
-        r'\1\n',
+        r'\n\n\1\n\n',
         output,
         flags=re.DOTALL | re.IGNORECASE,
     )
