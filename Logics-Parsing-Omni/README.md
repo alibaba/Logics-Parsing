@@ -88,72 +88,72 @@ Full evaluation details are released in the technical report.
     <tbody>
       <tr>
         <td align="left">Gemini-3-Pro</td>
-        <td align="center"><b>69.72</b></td>
-        <td align="center"><b>63.15</b></td>
-        <td align="center"><b>76.29</b></td>
-        <td align="center"><u>86.66</u></td>
-        <td align="center"><b>85.33</b></td>
-        <td align="center">87.98</td>
+        <td align="center"><b>61.20</b></td>
+        <td align="center">55.96</td>
+        <td align="center"><b>66.44</b></td>
+        <td align="center"><u>87.03</u></td>
+        <td align="center"><b>84.21</b></td>
+        <td align="center">87.43</td>
         <td align="center"><b>87.01</b></td>
       </tr>
       <tr>
         <td align="left">GPT-5.2</td>
-        <td align="center">52.84</td>
-        <td align="center">46.07</td>
-        <td align="center">59.61</td>
-        <td align="center">81.07</td>
-        <td align="center">70.34</td>
-        <td align="center"><u>91.80</u></td>
+        <td align="center">39.94</td>
+        <td align="center">37.77</td>
+        <td align="center">42.12</td>
+        <td align="center">82.71</td>
+        <td align="center">69.86</td>
+        <td align="center"><u>91.48</u></td>
         <td align="center">77.43</td>
       </tr>
       <tr>
         <td align="left">Qwen3.5-397B-A17B</td>
-        <td align="center">54.80</td>
-        <td align="center">47.12</td>
-        <td align="center">62.48</td>
-        <td align="center">78.79</td>
-        <td align="center">74.44</td>
-        <td align="center">83.15</td>
+        <td align="center">57.40</td>
+        <td align="center"><b>56.95</b></td>
+        <td align="center">57.85</td>
+        <td align="center">82.81</td>
+        <td align="center">73.77</td>
+        <td align="center">83.13</td>
         <td align="center">81.09</td>
       </tr>
       <tr>
         <td align="left">Qwen3-VL-235B-A22B</td>
-        <td align="center">59.34</td>
-        <td align="center"><u>50.62</u></td>
-        <td align="center">68.05</td>
-        <td align="center">78.00</td>
-        <td align="center">72.15</td>
-        <td align="center">83.85</td>
+        <td align="center">58.61</td>
+        <td align="center"><u>56.23</u></td>
+        <td align="center">60.99</td>
+        <td align="center">79.49</td>
+        <td align="center">71.51</td>
+        <td align="center">83.46</td>
         <td align="center">84.47</td>
       </tr>
       <tr>
         <td align="left">Qwen3-VL-30B-A3B</td>
-        <td align="center">53.73</td>
-        <td align="center">46.47</td>
-        <td align="center">60.99</td>
-        <td align="center">73.05</td>
-        <td align="center">66.31</td>
-        <td align="center">79.78</td>
+        <td align="center">50.92</td>
+        <td align="center">48.91</td>
+        <td align="center">52.94</td>
+        <td align="center">73.25</td>
+        <td align="center">65.71</td>
+        <td align="center">79.36</td>
         <td align="center">78.94</td>
       </tr>
       <tr>
         <td align="left">Qwen3-Omni-30B-A3B</td>
-        <td align="center">51.30</td>
-        <td align="center">44.88</td>
-        <td align="center">57.72</td>
-        <td align="center">74.93</td>
-        <td align="center">71.39</td>
-        <td align="center">78.47</td>
+        <td align="center">47.36</td>
+        <td align="center">46.85</td>
+        <td align="center">47.88</td>
+        <td align="center">77.46</td>
+        <td align="center">70.75</td>
+        <td align="center">78.25</td>
         <td align="center">73.50</td>
       </tr>
       <tr>
         <td align="left"><b>Logics-Parsing-Omni(Ours)</b></td>
-        <td align="center"><u>62.46</u></td>
-        <td align="center">50.53</td>
-        <td align="center"><u>74.38</u></td>
-        <td align="center"><b>87.43</b></td>
-        <td align="center"><u>82.67</u></td>
-        <td align="center"><b>92.19</b></td>
+        <td align="center"><u>59.07</u></td>
+        <td align="center">53.77</td>
+        <td align="center"><u>64.37</u></td>
+        <td align="center"><b>88.66</b></td>
+        <td align="center"><u>82.01</u></td>
+        <td align="center"><b>92.12</b></td>
         <td align="center"><u>84.90</u></td>
       </tr>
     </tbody>
@@ -185,49 +185,49 @@ Full evaluation details are released in the technical report.
     <tbody>
       <tr>
         <td align="left">Gemini-3-Pro</td>
-        <td align="center"><u>52.68</u></td>
-        <td align="center"><b>73.99</b></td>
-        <td align="center">31.37</td>
-        <td align="center"><b>44.56</b></td>
-        <td align="center"><b>52.54</b></td>
-        <td align="center"><b>36.57</b></td>
-        <td align="center"><u>61.00</u></td>
-        <td align="center"><u>53.47</u></td>
-        <td align="center"><u>68.53</u></td>
+        <td align="center"><u>79.40</u></td>
+        <td align="center"><b>72.90</b></td>
+        <td align="center">85.89</td>
+        <td align="center"><b>63.40</b></td>
+        <td align="center"><b>57.87</b></td>
+        <td align="center"><b>68.92</b></td>
+        <td align="center"><u>64.37</u></td>
+        <td align="center"><b>58.54</b></td>
+        <td align="center"><u>70.20</u></td>
       </tr>
       <tr>
         <td align="left">Qwen3-Omni-30B-A3B</td>
-        <td align="center">48.17</td>
-        <td align="center">62.86</td>
-        <td align="center"><u>33.48</u></td>
-        <td align="center">27.98</td>
-        <td align="center">29.35</td>
-        <td align="center">26.60</td>
-        <td align="center">25.06</td>
-        <td align="center">8.40</td>
-        <td align="center">41.72</td>
+        <td align="center">75.17</td>
+        <td align="center">62.13</td>
+        <td align="center"><u>88.22</u></td>
+        <td align="center">45.23</td>
+        <td align="center">34.15</td>
+        <td align="center">56.32</td>
+        <td align="center">26.86</td>
+        <td align="center">10.22</td>
+        <td align="center">43.50</td>
       </tr>
       <tr>
         <td align="left"><b>Logics-Parsing-Omni(Ours)</b></td>
-        <td align="center"><b>53.75</b></td>
-        <td align="center"><u>70.03</u></td>
-        <td align="center"><b>37.48</b></td>
-        <td align="center"><u>43.78</u></td>
-        <td align="center"><u>51.76</u></td>
-        <td align="center"><u>35.79</u></td>
-        <td align="center"><b>66.78</b></td>
-        <td align="center"><b>54.52</b></td>
-        <td align="center"><b>79.03</b></td>
+        <td align="center"><b>79.63</b></td>
+        <td align="center"><u>69.27</u></td>
+        <td align="center"><b>89.99</b></td>
+        <td align="center"><u>61.12</u></td>
+        <td align="center"><u>56.09</u></td>
+        <td align="center"><u>66.15</u></td>
+        <td align="center"><b>69.12</b></td>
+        <td align="center"><u>57.39</u></td>
+        <td align="center"><b>80.85</b></td>
       </tr>
     </tbody>
   </table>
-  <p align="left"><em>Note: <b>Bold text</b> indicates the best result.</em></p>
+  <p align="left"><em>Note: <b>Bold text</b> indicates the best result, and <u>underlined text</u> indicates the second-best result.</em></p>
 </div>
 
 
 As detailed in the tables above, **Logics-Parsing-Omni** demonstrates highly competitive capabilities across all diverse modalities:
 - **Dominance in Complex Modalities:** Our model consistently surpasses all evaluated baselines—including the leading proprietary **Gemini-3-Pro**—in the *Graphics*, *Audio*, and *Text-Rich Video* domains.
-- **Exceptional Cognitive Reasoning:** The superiority is particularly pronounced in the *Cognition* metric. Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as **92.19** in Graphics and **79.03** in Text-Rich Video.
+- **Exceptional Cognitive Reasoning:** The superiority is particularly pronounced in the *Cognition* metric. Logics-Parsing-Omni exhibits exceptional logical reasoning and semantic understanding, achieving top-tier scores such as **92.12** in Graphics and **80.85** in Text-Rich Video.
 These results firmly validate that our model successfully bridges fundamental signal detection with complex multi-modal interpreting.
 
 
