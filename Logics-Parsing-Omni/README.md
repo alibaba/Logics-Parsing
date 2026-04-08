@@ -8,6 +8,7 @@
 
 
 ## News
+* [2026/04/08] We release the [**OmniParsingBench**](https://huggingface.co/datasets/Logics-MLLM/OmniParsingBench), a comprehensive multimodal parsing benchmark covering Natural Image, Graphics, Audio, Natural Video, and Text-Rich Video.
 * [2026/03/09] We release the [**Logics-Parsing-Omni**](https://github.com/alibaba/Logics-Parsing/tree/main/Logics-Parsing-Omni). For more details, please check our [**Technical Report**](https://arxiv.org/pdf/2603.09677).
 * [2026/02/13] 🚀🚀🚀🚀🚀 We release Logics-Parsing-v2 Model.
 * [2025/09/25] 🚀🚀🚀 We release Logics-Parsing Model.
